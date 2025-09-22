@@ -1,0 +1,14 @@
+# Example configuration for Azure Custom Translator
+# Copy this file to terraform.tfvars and customize the values
+
+resource_group_name     = "rg-custom-translator-example"
+location                = "East US"
+custom_translator_name  = "ct-example-001"
+sku_name               = "S1"
+
+tags = {
+  Environment = "development"
+  Purpose     = "CustomTranslator"
+  Owner       = "YourTeam"
+  CostCenter  = "IT"
+}
